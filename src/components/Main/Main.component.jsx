@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import {
   MainContainer,
   Content,
-  AdTablet,
+  AdDesktop,
   // AdUnitRectangle,
   AdMobile,
   MainText,
@@ -60,7 +60,7 @@ const Main = ({ videos }) => {
         ></iframe>
       </AdMobile>
 
-      <AdTablet>
+      <AdDesktop>
         <iframe
           title="desktop_banner"
           src="//www.topdisplaynetwork.com/watchnew?key=fb88a499e07584b47564179548308523"
@@ -69,7 +69,7 @@ const Main = ({ videos }) => {
           frameborder="0"
           scrolling="no"
         ></iframe>
-      </AdTablet>
+      </AdDesktop>
 
       <Search>
         <GoSearch
@@ -88,7 +88,7 @@ const Main = ({ videos }) => {
       </Search>
       <Content>
         <Videos videos={currentFilteredVideos} loading={loading} />
-        <AdTablet>
+        <AdDesktop>
           <iframe
             title="mobile_banner"
             src="https://www.topdisplaynetwork.com/watchnew?key=125b9aafbde90afa709434287e9a3ee1"
@@ -97,7 +97,7 @@ const Main = ({ videos }) => {
             frameborder="0"
             scrolling="no"
           ></iframe>
-        </AdTablet>
+        </AdDesktop>
       </Content>
 
       <AdMobile>
@@ -128,7 +128,7 @@ const Main = ({ videos }) => {
         ></iframe>
       </AdMobile>
 
-      <AdTablet>
+      <AdDesktop>
         <iframe
           title="desktop_banner"
           src="//www.topdisplaynetwork.com/watchnew?key=fb88a499e07584b47564179548308523"
@@ -137,9 +137,9 @@ const Main = ({ videos }) => {
           frameborder="0"
           scrolling="no"
         ></iframe>
-      </AdTablet>
+      </AdDesktop>
 
-      <AdTablet>
+      <AdDesktop>
         <iframe
           title="squared_banner"
           src="//www.topdisplaynetwork.com/watchnew?key=4d00edeb5e29120a67095839cfb12c33"
@@ -148,7 +148,7 @@ const Main = ({ videos }) => {
           frameborder="0"
           scrolling="no"
         ></iframe>
-      </AdTablet>
+      </AdDesktop>
     </MainContainer>
   );
 };
